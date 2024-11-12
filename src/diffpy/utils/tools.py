@@ -117,7 +117,8 @@ def get_user_info(args=None):
             " computer and your name will be automatically associated with subsequent diffpy data by default.\n"
             "This is not recommended on a shared or public computer. "
             "You will only have to do that once.\n"
-            "For more information, please refer to www.diffpy.org/diffpy.utils/examples/toolsexample.html"
+            "You will also be able to update the name and email in the global configuration file in the future.\n"
+            "For detailed instructions, please refer to www.diffpy.org/diffpy.utils/examples/toolsexample.html"
         )
         config_bool = _create_global_config(args)
         global_config = load_config(Path().home() / "diffpyconfig.json")
